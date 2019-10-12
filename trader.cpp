@@ -10,8 +10,8 @@ class trader
         struct login
         {
             std::string id,user_name,password,email;
-            long int created_time,last_login,login_count=0;
-             
+            long int created_time,login_count=0;
+
         }lgn[];
 
         struct account
@@ -30,7 +30,7 @@ class trader
             std::string id,user_name,first_name,last_name,email,branch,state,country;
             long int phone_number,country_code,profile_count=0,account_count=0,login_count=0;
             struct account acc[];
-            struct login lgn[];
+            //struct login lgn[];
 
         }pro[];
 
@@ -118,3 +118,4 @@ class trader
             }  
         }
 };
+
